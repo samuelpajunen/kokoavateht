@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Soulin matka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    /></noscript>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <style>
+      .content {
+        margin-top: 55px; /* Ylimääräinen tila navigaatiopalkin takia, ettei peittäisi alempaa sisältöä */
+      }
+    </style>
+    <script src="js.js" defer></script>
+  </head>
+  <body>
+    <!--Sivun Navi-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Etusivu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="MIssä käydä.html">Lisää suosituksia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kuvia.html">Kuvia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Punainen laatikko, jossa lyhyt sivun esittely-->
+    <div class="p-5 bg-danger text-white text-center content">
+      <h1>Soulin matka</h1>
+      <p>Lempi kohteitani Soulista</p>
+    </div>
+
+    <!--Sivulle vasempaan laitaan sisältöä, jossa on yhden kohteen esittely ja myös sää näkyvyys-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Soul päivällä</h2>
+          <h5>Kuva otettu Namsan tornista</h5>
+          <img
+            src="iconic.jpg"
+            width="350px"
+            class="img-thumbnail"
+            alt="Soulin kaupunki yli 370 metrin korkeudesta"
+          />
+          <p>
+            Yksi lempi kohteita Soulista. Näköala on noin 370 metrin
+            korkeudesta. Torni rakennettu Namsan vuorelle, joka on 270 metriä
+            korkea keskellä Soulin kaupunkia.
+          </p>
+          <h2 style="padding-bottom: 20px; padding-top: 40px">
+            Soulin sää tällä hetkellä
+          </h2>
+          <div id="vastaus"></div>
+        </div>
+
+        <!--Sivulle lisää sisältöä-->
+        <div class="col-sm-8">
+          <h2>Soul yöllä</h2>
+          <h5>Kuva näköalatasanteesta Namsan vuorelta noin 270 korkeudesta.</h5>
+          <img
+            src="soul yöllä.jpg"
+            width="850px"
+            class="img-thumbnail"
+            alt="Soulin kaupunki noin 270 metrin korkeudesta Namsan vuorella."
+            loading="lazy"
+          />
+          <p>
+            Namsan vuori on käytännössä sama kohde kuin Namsanin torni, mutta
+            hieman matalemmalla ollaan.
+          </p>
+          <p>
+            Namsan vuori oli kokonaisvaltaisesti lempi kohteeni. Kävin tornissa
+            päiväs aikaan ja myöhemmin matkallani pelkästään ylös vuorelle,
+            mutta jätin ostamatta lippua torniin. Vuorella oli paljon turisteja,
+            perheitä, nuoria ja urheilijoita. Tunnelma oli ihana. Etenkin
+            vierailessani vuorella yöllä tunnelma oli epärealistinen. Seoulin
+            suurkaupungin valot olivat, jotakin mieletöntä Suomessa asuvalle.
+            Vuori sijaitsee keskellä kaupunkia, joten jokaiseen suuntaan on
+            upeat maisemat ja olisi halunnut laittaa kuvia jokaiseen suuntaan.
+          </p>
+
+          <h2 class="mt-5">Cafe Gio</h2>
+          <img
+            src="cafegio.jpg"
+            class="img-thumbnail"
+            width="400px"
+            alt="Starfield kirjasto Soulissa."
+            loading="lazy"
+          />
+          <p>
+            Cafe Gio oli meidän Airbnb:n lähellä oleva kahvila. Käytiin siellä
+            melkein joka aamu matkamme aikana. Sitä pyöritti korealainen
+            pariskunta. He tykästyivät meihin matkan aikana myös ja
+            rauhallisilla hetkillä tulivat juttelemaan meidän kanssaan ja
+            välillä tarjosivat pieniä herkkuja meille. Heillä oli myös todella
+            kauniita ja laadukkaita kangaskasseja myynnissä. Kahvilalle vahva
+            suositus. Oli hyvällä sijainnilla lähell Soul Station:ia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footeri, jossa myös linkki seuraavalle sivulle-->
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <a class="navbar-brand" href="MIssä käydä.html"
+        >Lisää "Lisää suosituksia" sivuilla</a
+      >
+    </div>
+  </body>
+</html>
